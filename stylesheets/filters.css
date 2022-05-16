@@ -1,0 +1,110 @@
+ul.filter_menu {
+    margin-right: 5px;
+    background: #303030;
+    display: inline-block;
+    user-select: none;
+    background-color: transparent;
+}
+
+ul.filter_menu li {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+ul.filter_menu li a,
+ul.filter_menu li a:link {
+    text-decoration: none;
+    display: block;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+ul.filter_menu li a:hover {
+    color: var(--textcolor);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul.filter_menu li a.selected {
+    border-right: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+ul.filter_menu li a.selected,
+ul.filter_menu li a:active {
+    color: #fafafa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul.filter_menu li ul {
+    display: none;
+}
+
+ul.filter_menu li ul {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 55px;
+}
+
+ul.filter_menu li:hover ul {
+    font-size: 18px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    left: -10px;
+    border-radius: 0px 0px 5px 5px;
+    top: 23px;
+    padding: 5px 0;
+    list-style: none;
+    background: darkgray;
+    margin-top: 22px;
+}
+
+ul.filter_menu li ul li {
+    float: none;
+    margin: 0px;
+}
+
+ul.filter_menu li ul li a,
+ul.filter_menu li ul li a:link {
+    color: white;
+    text-shadow: none;
+    display: block;
+    background: transparent none;
+    padding: 10px 58px 10px 11px;
+    margin-bottom: -5px;
+    white-space: nowrap;
+}
+
+ul.filter_menu li ul li a:hover {
+    background: #2D89EF;
+    -moz-transition: all 0.1s ease-in-out;
+    color: #fff;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+ul.filter_menu li ul li ul li {
+    display: none;
+}
+
+ul.filter_menu li ul li:hover ul li {
+    display: block;
+}
+
+ul.filter_menu li ul li:hover ul {
+    left: 100%;
+    top: -25px;
+}

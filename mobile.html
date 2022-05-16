@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FBLA Tourism</title>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <link rel="icon" type="image/png" href="resources/cropped-FBLA-flag.png">
+        <link rel="stylesheet" href="stylesheets/mobile.css">
+        <link rel="stylesheet" href="stylesheets/filters.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <img src="resources/fbla_logo.png" id="logo" onClick="window.location.reload();">
+            <input placeholder="Search..." style="width: 54%;" id="searchBar">
+            <button onclick="search()" id="searchButton"><img src="resources/magnifying-glass.png" id="magnifying-glass" style="height: 25px; width: 25px"></button>
+            <img src="resources/light-mode.png" id="toggleColors" onClick="toggleColors()">
+            <br><br>
+            <button id="listFavorites" onclick="displayFavorites()">Favorites</button>
+            <div id="google_translate_element"></div>
+            <ul class='filter_menu' id="filter-list">
+                <li>
+                    <a id="filters">Filters<img src="resources/dropdown-arrow.png" id="arrow"></a>
+                    <ul>
+                        <li>
+                            <a class="disabled">Restaurants</a>
+                            <ul>
+                                <li><a value="bar">Bar</a></li>
+                                <li><a value="bakery">Bakery</a></li>
+                                <li><a value="cafe">Cafe</a></li>
+                                <li><a value="restaurant">Good Eats</a></li>
+                                <li><a value="liquor_store">Liquor Store</a></li>
+                                <li><a value="meal_takeaway">Meal Takeaway</a></li>
+                                <li><a value="meal_delivery">Meal Delivery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="disabled">Emergency</a>
+                            <ul>
+                                <li><a value="city_hall">City hall</a></li>
+                                <li><a value="fire_station">Fire station</a></li>
+                                <li><a value="hospital">Hospital</a></li>
+                                <li><a value="police">Police</a></li>
+                                <li><a value="veterinary_care">Veterinary Care</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="disabled">Fun things to do</a>
+                            <ul>
+                                <li><a value="aquarium">Aquarium</a></li>
+                                <li><a value="bowling_alley">Bowling Alley</a></li>
+                                <li><a value="movie_theater">Movie Theater</a></li>
+                                <li><a value="museum">Meuseum</a></li>
+                                <li><a value="night_club">Night Club</a></li>
+                                <li><a value="shopping_mall">Shopping Mall</a></li>
+                                <li><a value="tourist_attraction">Tourist Attractrions</a></li>
+                                <li><a value="zoo">Zoo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="disabled">Nature Spots</a>
+                            <ul>
+                                <li><a value="campground">Campground</a></li>
+                                <li><a value="park">Park</a></li>
+                                <li><a value="zoo">Zoo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="disabled">Shopping</a>
+                            <ul id="filter-list">
+                                <li><a value="clothing_store">Clothing Store</a></li>
+                                <li><a value="drugstore">Drugstore</a></li>
+                                <li><a value="electronics_store">Electronics Store</a></li>
+                                <li><a value="home_goods_store">Home Goods Store</a></li>
+                                <li><a value="jewelry_store">Jewelry Store</a></li>
+                                <li><a value="supermarket">Supermarket</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="disabled">Travel</a>
+                            <ul id="filter-list">
+                                <li><a value="airport">Airport</a></li>
+                                <li><a value="bus_station">Bus Station</a></li>
+                                <li><a value="lodging">Lodging</a></li>
+                                <li><a value="train_station">Train Station</a></li>
+                                <li><a value="travel_agency">Travel Agency</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="rating">
+                <input type="range" min="1" max="5" value="1" class="slider" id="ratings">
+                <label id="ratingText">1+<img src='resources/star.png' id='star'> Rating</label>
+            </div>
+            <div class="open">
+                <input type="checkbox" id="openNow" name="openNow" value="false">
+                <label for="openNow">Open Now</label>
+            </div>
+            <div class="price">
+                <input type="range" min="1" max="4" value="1" class="minPrice" id="minPrice">
+                <label id="minPriceText">$</label>
+            </div>
+            <img src="resources/refresh.png" id="refresh" onclick="refresh()">
+            <img src="resources/clear-filters.png" id="clear" onclick="clearFilters()">
+        </div>
+
+        <div id="map" class="map"></div>
+        
+        <div id="output">
+            <h1 id="placeholder"></h1>
+        </div>
+
+        <div id="footer">
+            <a id="footer-text" href="readme.html"><b>Readme</b></a>
+            <b id="footer-text">|</b>
+            <a id="footer-text" href="mailto:contact@kylertran.xyz"><b>Contact</b></a>
+            <b id="footer-text">|</b><a></a>
+            <a id="footer-text" href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank"><b>License</b></a>
+        </div>
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/query.js"></script>
+        <script src="scripts/output.js"></script>
+        <script src="scripts/favorites.js"></script>
+        <script src="scripts/dark.js"></script>
+        <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxIMcsVc5NTm40LLqU-a8x3nPkId8x2QA&libraries=places&callback=initGoogle"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

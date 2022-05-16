@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FBLA Tourism</title>
+        <link rel="icon" type="image/png" href="resources/cropped-FBLA-flag.png">
+        <link rel="stylesheet" href="stylesheets/startup.css">
+    </head>
+    <body>
+        <center>
+            <img src="resources/fbla_logo.png">
+            <h1>Welcome to FBLA Tourism!</h1>
+            <h2>Please choose a location</h2>
+
+            <select name="places" id="places">
+                <option value='{"lat":"47.620422", "lng":"-122.349358"}'>Seattle, WA</option>
+                <option value='{"lat":"45.523064", "lng":"-122.676483"}'>Portland, OR</option>
+                <option value='{"lat":"34.0522342", "lng":"-118.2436849"}'>Los Angeles, CA</option>
+                <option value='{"lat":"41.881832", "lng":"-87.623177"}'>Chicago, IL</option>
+                <option value='{"lat":"33.748783", "lng":"-84.388168"}'>Atlanta, GA</option>
+                <option value='{"lat":"40.730610", "lng":"-73.935242"}'>New York, NY</option>
+                <option value='{"lat":"39.019444", "lng":"125.738052"}'>Pyongyang, North Korea</option>
+                <option>My Location</option>
+            </select>
+            
+            <button onClick="setLocation()">Submit</button>
+        </center>
+        
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
