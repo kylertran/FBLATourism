@@ -1,4 +1,4 @@
-# FBLA Tourism Version 1.0
+# FBLA Tourism
 ![FBLA Logo](resources/fbla_logo.png)
 
 **Coding & Programming project for FBLA 2022**  
