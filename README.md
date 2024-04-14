@@ -2,7 +2,7 @@
 ![FBLA Logo](resources/fbla_logo.png)
 
 **Coding & Programming project for FBLA 2022**  
-**Copyright & Copyright &copy; 2022 Noam Hashash, Kyler Tran, Edison Zeng**
+**Copyright &copy; 2022 Noam Hashash, Kyler Tran, Edison Zeng**
 **All Rights Reserved**
 
 FBLA Tourism lets you discover tourist attractions and amenities around Seattle, WA. This software runs on all modern web browsers.
