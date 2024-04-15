@@ -30,7 +30,7 @@ FBLA Tourism lets you discover tourist attractions and amenities around Seattle,
 - [Moon Icon by Ex Eyecon](https://iconscout.com/icons/moon)
 - [Sun Icon by Amedia Utvikling](https://iconscout.com/icon/sun-631)
 
-## Footer Links
-- [Readme](readme.html)
-- [Contact](mailto:contact@kylertran.xyz)
-- [License](https://www.gnu.org/licenses/agpl-3.0.en.html)
+## Contact
+
+**Kyler Tran**  
+Email: [contact@kylertran.com](mailto:contact@kylertran.com)
